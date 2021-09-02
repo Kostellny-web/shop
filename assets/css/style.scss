@@ -2309,10 +2309,7 @@ h1, h2, h3, h4, h5, h6 {
     
     /* Container */
     .container {
-        
-        // max-width: 1600px;
         padding: 0 120px;
-        
     }
     
     /* Header */
@@ -2320,13 +2317,40 @@ h1, h2, h3, h4, h5, h6 {
         right: 260px;
     }
 
+    /* Card */
+
+    .shopping__cart__block__item {
+        &:first-child {
+            margin-bottom: 64px;
+        }
+
+        &--right {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    .cart__item {
+        padding-right: 470px;
+    }
+
+    .shopping__cart__buttons__block {
+        justify-content: space-around;
+    }
+
+    .shopping__checking__block {
+        margin-top: 37px;
+    }
+
+    .shopping__address__block {
+        margin-right: 250px;
+    }
+
 }
 
 
 @media (max-width: 1199px) {
     
-    /* Header */
-
     /* Intro */
     .intro__title {
         font-size: 36px;
@@ -2340,6 +2364,15 @@ h1, h2, h3, h4, h5, h6 {
     .benefits__item {
         margin-left: 10px;
         margin-right: 10px;
+    }
+
+    /* Card */
+    .cart__item {
+        padding-right: 400px;
+    }
+
+    .shopping__address__block {
+        margin-right: 200px;
     }
 }
 
@@ -2363,6 +2396,22 @@ h1, h2, h3, h4, h5, h6 {
     .product__desc__inner {
         top: 0;
     }
+
+    /* Card */
+    .cart__item {
+        padding-right: 350px;
+    }
+
+    .shopping__address__block {
+        margin-right: 150px;
+    }
+
+    /* Registration */
+    .registration__block {
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
 }
 
 @media (max-width: 1079px) {
@@ -2371,17 +2420,49 @@ h1, h2, h3, h4, h5, h6 {
     .featured__item__photo {
         max-width: 260px;
     }
+
+    /* Card */
+    .cart__item {
+        padding-right: 300px;
+    }
+
+    .shopping__address__block {
+        margin-right: 100px;
+    }
 }
 
 @media (max-width: 1047px) {
     
-    /* Header */
-
     /* Intro */
     .intro__photo {
         max-width: 750px;
     }
+
+    /* Card */
+    .cart__item {
+        padding-right: 220px;
+    }
+
+    .shopping__address__block {
+        margin-right: 50px;
+    }
     
+    /* Registration */
+    .registration__info__input {
+        min-width: 360px;
+    }
+
+    .registration__desc__title {
+        font-size: 16px;
+    }
+
+    .registration__desc__text {
+        font-size: 16px;
+    }
+
+    .registration__desc__chck__item {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1019px) {
@@ -2428,6 +2509,11 @@ h1, h2, h3, h4, h5, h6 {
     #chk {
         right: 220px;
     }
+
+    /* Card */
+    .shopping__address__block {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 899px) {
@@ -2448,6 +2534,11 @@ h1, h2, h3, h4, h5, h6 {
     /* Featured */
     .featured__item__photo {
         max-width: 320px;
+    }
+
+    /* Card */
+    .cart__item {
+        padding-right: 150px;
     }
 }
 
@@ -2586,6 +2677,10 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 330px;
         margin: 0 auto;
     }
+
+    .shopping__cart__block__item {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 751px) {
@@ -2630,6 +2725,17 @@ h1, h2, h3, h4, h5, h6 {
     .intro__photo {
         margin-left: -90px;
     }
+
+    /* Card */
+    .shopping__cart__block__item {
+        &--right {
+            flex-wrap: wrap;
+        }
+    }
+
+    .intro__photo {
+        margin-left: -90px;
+    }
 }
 
 @media (max-width: 631px) {
@@ -2637,6 +2743,32 @@ h1, h2, h3, h4, h5, h6 {
     /* Featured */
     .featured__item__photo {
         max-width: 250px;
+    }
+
+    /* Card */
+    .cart__item {
+        padding: 12px 50px 25px 17px;
+    }
+
+    .cart__img {
+        max-width: 143px;
+    }
+
+    .cart__item__name {
+        margin-bottom: 25px;
+        font-size: 16px;
+    }
+
+    .cart__item__content {
+        font-size: 14px;
+    }
+
+    .shopping__cart__buttons__block {
+        justify-content: space-between;
+    }
+
+    .shopping__btn__transapent {
+        padding: 12px 15px;
     }
 }
 
@@ -2657,6 +2789,17 @@ h1, h2, h3, h4, h5, h6 {
             min-height: 111px;
         }
     }
+
+    /* Registration */
+    .registration__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn__join {
+        margin-bottom: 40px;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -2789,6 +2932,11 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 46px;
     }
 
+    /* Registration */
+    .registration__info__input {
+        min-width: 0;
+        max-width: 259px;
+    }
 }
 
     /* ==== Primary 375px ==== */
